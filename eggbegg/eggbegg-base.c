@@ -15,12 +15,17 @@ void doAction(char* direction, int delaylength) {
 		motor[motorB] = speed;
 		motor[motorC] = speed;
 	}
+	else if (direction == "back") {
+		motor[motorB] = -speed;
+		motor[motorC] = -speed;
+	}
 	delay(delaylength);
 	motor[motorB] = 0;
 	motor[motorC] = 0;
 	delay(500);
 }
 
+// robot task
 task main() {
 
 }
