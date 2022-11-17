@@ -1,3 +1,6 @@
+//credit to TheXbots on Github
+//Put this before the task main()
+
 void DoAction(char* dirorstraight, int length, int speed, int angle)
 {
 	if (dirorstraight	== "Straight") {
@@ -20,10 +23,10 @@ void DoAction(char* dirorstraight, int length, int speed, int angle)
 	}
 	
 	if (dirorstraight == "Left") {
-		delay(7.06 * angle);
+		delay(7.14624 * angle);
 	}
 	else if (dirorstraight == "Right") {
-		delay(7.06 * angle);
+		delay(7.14624 * angle);
 	}
 	
 	else if (dirorstraight == "Straight") {
