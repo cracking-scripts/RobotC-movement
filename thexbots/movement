@@ -1,7 +1,4 @@
-// Credit to TheXbots on Github
-// Put this before the main task 
-
-void DoAction(char* dirorstraight, int length)
+void DoAction(char* dirorstraight, int length, int speed)
 {
 	if (dirorstraight	== "Straight") {
 		motor(motorB) = speed;
@@ -14,6 +11,11 @@ void DoAction(char* dirorstraight, int length)
 	else if (dirorstraight == "Right") {
 		motor(motorB) = -speed;
 		motor(motorC) = speed;
+		
 	}
+	else if (dirorstraight == "Back") {
+		motor(motorB) = -speed;
+		motor(motorC) = -speed;
 	delay(length);
+	}
 }
