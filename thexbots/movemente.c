@@ -1,7 +1,7 @@
 //credit to TheXbots on Github
 //Put this before the task main()
 
-void DoAction(char* dirorstraight, int length, int speed, int angle)
+void DoAction(char* dirorstraight, int length, int speed, bool useangle)
 {
 	if (dirorstraight	== "Straight") {
 		motor(motorB) = speed;
@@ -22,18 +22,11 @@ void DoAction(char* dirorstraight, int length, int speed, int angle)
 	
 	}
 	
-	if (dirorstraight == "Left") {
-		delay(7.14624 * angle);
-	}
-	else if (dirorstraight == "Right") {
-		delay(7.14624 * angle);
+	if (useangle == true) {
+		delay((4.04 * length/speed) * length);
 	}
 	
-	else if (dirorstraight == "Straight") {
-		delay(length);
-	}
-	
-	else if (dirorstraight == "Back") {
+	else if (useangle == false) {
 		delay(length);
 	}
 }
