@@ -1,5 +1,5 @@
 // Credit to TheXbots on Github
-Put before task main()
+//Put before task main()
 
 void da(char* dirorstraight, int l, int s, bool ua)
 {
