@@ -1,5 +1,4 @@
-//credit to TheXbots on Github
-//Put this before the task main()
+//Old movement, dont use.
 
 void DoAction(char* dirorstraight, int length, int speed, bool useangle)
 {
