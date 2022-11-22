@@ -1,3 +1,5 @@
+//Old code, dont use.
+
 void DoAction(char* dirorstraight, int length, int speed)
 {
 	if (dirorstraight	== "Straight") {
